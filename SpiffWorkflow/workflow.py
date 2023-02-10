@@ -47,6 +47,8 @@ class Workflow(object):
           generating tasks twice (and associated problems with multiple
           hierarchies of tasks)
         """
+        print(workflow_spec, deserializing)
+        print('kwargs:', kwargs)
         self.name = None
         assert workflow_spec is not None
         self.spec = workflow_spec
